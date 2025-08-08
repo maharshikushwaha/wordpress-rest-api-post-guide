@@ -1,6 +1,18 @@
 # wordpress-rest-api-post-guide
 Comprehensive guide for creating posts in WordPress via the REST API, including all parameters, detailed descriptions, and examples for developers.
 
+
+# WordPress REST API – Required Parameters for Creating a Post
+
+| Parameter | Type | Description | Example |
+|-----------|------|-------------|---------|
+| `title` | string | The title of the post. This is displayed as the main heading of the post. | `"My First API Post"` |
+| `content` | string | The main body of the post. Can include HTML or plain text. | `"<p>This is the post body content</p>"` |
+| `status` | string | The publication status of the post. Common values: `"publish"`, `"draft"`, `"pending"`. | `"publish"` |
+| `date` | string (ISO8601) | The date and time to publish the post, in ISO8601 format. If not set, current date/time is used. | `"2025-08-08T14:30:00"` |
+| `slug` | string | The URL-friendly version of the post title. If not set, it is auto-generated from the title. | `"my-first-api-post"` |
+
+
 # WordPress REST API – Create Post Parameters Guide
 
 This document explains all parameters you can send to the `POST /wp/v2/posts` endpoint when creating a post via the WordPress REST API, with examples for each.
