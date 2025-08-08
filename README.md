@@ -110,9 +110,12 @@ This document explains all parameters you can send to the `POST /wp/v2/posts` en
   "meta": { "_custom_key": "Custom Value" },
   "menu_order": 0
 }
+```
+---
 
 ## Example Request (cURL)
-curl -X POST https://example.com/wp-json/wp/v2/posts \
+
+```curl -X POST https://example.com/wp-json/wp/v2/posts \
 -u username:application_password \
 -H "Content-Type: application/json" \
 -d '{
@@ -123,4 +126,4 @@ curl -X POST https://example.com/wp-json/wp/v2/posts \
   "tags": [5, 8],
   "featured_media": 123
 }'
-
+```
